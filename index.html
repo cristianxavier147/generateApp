@@ -15,13 +15,21 @@
 
 <body>
 
-  <div class="div-central">
-    <h2 class="id"></h2>
-    <p class="p"></p>
-    <img src="images/pattern-divider-mobile.svg" alt="divider-mobile">
-    <div class="circle-icon">
-      <img src="images/icon-dice.svg" alt="" srcset="">
+  <div class="container">
+    <h1 id="title"></h1>
+    <p id="text"></p>
+    <picture>
+      <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+      <img src="./images/pattern-divider-mobile.svg" alt="divider-mobile">
+    </picture>
+    <!-- button generate -->
+    <div>
+      <button class="ver">
+        <img src="./images/icon-dice.svg" alt="icon-dice">
+      </button>
+
     </div>
+
   </div>
 
   <script src="main.js"></script>
